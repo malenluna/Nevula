@@ -68,7 +68,7 @@
         <div class="logo-text">NEVULA</div>
 
         <p>Sistema de gestión de equipos y tareas</p>
-        <a class="btn" href="../../../app/http/controllers/AuthController.php">Iniciar sesión</a>
+        <a class="btn" href="../auth/login_nevula.php">Iniciar sesión</a>
 
     </div>
 
