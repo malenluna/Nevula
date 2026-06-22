@@ -68,9 +68,7 @@
         <div class="logo-text">NEVULA</div>
 
         <p>Sistema de gestión de equipos y tareas</p>
-
-        <!-- Redirección al login MVC -->
-        <a class="btn" href="/login">Iniciar sesión</a>
+        <a class="btn" href="?slug=AuthController">Login</a>
 
     </div>
 

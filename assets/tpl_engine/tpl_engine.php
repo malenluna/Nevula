@@ -1,7 +1,7 @@
 <?php
 
 function LoadTPL($name){
-    return file_get_contents("../resources/views/" . $name . ".php");
+    return file_get_contents("../resources/views/".$name.".php");
 }
 
 function setVarTPL($var, $value, $tpl){

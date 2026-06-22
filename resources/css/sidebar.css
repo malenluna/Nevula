@@ -1,25 +1,14 @@
-/* sidebar.css */
-.sidebar-container {
-  display: inline-flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 10px;
-}
-
 .sidebar {
   width: 201px;
-  height: 1080px;
-  position: relative;
+  min-height: 100vh;
   background: white;
   overflow: hidden;
 }
 
+/* LOGO */
 .logo-container {
   height: 57px;
-  position: absolute;
-  top: 8px;
-  left: 0;
-  display: inline-flex;
+  display: flex;
   align-items: center;
 }
 
@@ -37,17 +26,17 @@
   font-weight: 800;
 }
 
+/* SECCIONES */
 .sidebar-section {
   margin-top: 70px;
   padding-left: 10px;
 }
 
 .section-title {
-  width: 161px;
-  color: rgba(0, 0, 0, 0.2);
   font-size: 11px;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
+  color: rgba(0,0,0,0.2);
   margin-bottom: 5px;
 }
 
@@ -55,17 +44,25 @@
   color: #8d8383;
 }
 
+/* ITEMS */
 .nav-item {
+  display: block;
   width: 161px;
-  color: black;
-  font-size: 12px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
   padding: 7px 0;
   margin-bottom: 10px;
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  color: black;
   cursor: pointer;
 }
 
 .nav-item:hover {
   color: #6058cf;
+}
+.layout {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  width: 100%;
 }
