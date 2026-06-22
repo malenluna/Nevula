@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ "./../../../database/mysqli/Connect.php";
+require_once __DIR__ . "/../../../database/mysqli/Connect.php";
  
 function buscarUsuario($usuario, $contrasena)
 {
