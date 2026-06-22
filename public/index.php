@@ -1,5 +1,5 @@
 <?php
-    require "../assets/tpl_engine/tpl_engine.php";
+   require_once __DIR__ . "/../assets/tpl_engine/tpl_engine.php";
     if(isset($_GET['slug'])){
         $slug = $_GET['slug'];
         if(!file_exists("../app/http/controllers/".$slug.".php")){
