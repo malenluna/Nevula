@@ -7,5 +7,22 @@ if (!isset($_SESSION['usuario'])) {
     exit;
 }
 
+$rol = $_SESSION['rol'];
 
-include "../resources/views/panel/index.php";
+if ($rol == "empleado") {
+
+    include "../resources/views/panel/panelEmpleado.php";
+
+} elseif ($rol == "lider") {
+
+    include "../resources/views/panel/panelLider.php";
+
+} elseif ($rol == "colider") {
+
+    include "../resources/views/panel/panelColider.php";
+
+} else {
+
+    header("Location: /Nevula/public/index.php?slug=LoginController");
+    exit;
+}

@@ -1,9 +1,22 @@
 <?php
+require_once "../app/http/models/User.php";
 
-$msg_error = "";
+$usuario = trim($_POST['usuario']);
+$password = trim($_POST['password']);
 
-// cargar vista
-$tpl = LoadTPL("auth/login_nevula");
-$tpl = setVarTPL("MSG_ERROR", $msg_error, $tpl);
+$resultado = buscarUsuario($usuario, $password);
 
-printTPL($tpl);
+session_start();
+
+if ($resultado) {
+    $_SESSION['id'] = $resultado['id_usuario'];
+    $_SESSION['usuario'] = $resultado['usuario'];
+    $_SESSION['rol'] = $resultado['rol'];
+    header("Location: ?slug=IndexController");
+
+    exit;
+} else {
+    header("Location: ?slug=LogOutController");
+    exit;
+}
+?>
