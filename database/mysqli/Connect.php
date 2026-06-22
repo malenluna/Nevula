@@ -7,7 +7,7 @@ try {
     $conexion = new PDO(
         $config,
         "u214138677_nevula",
-        "Miri2026"
+        "YajuLuna26"
     );
 
     echo "CONEXION OK";
