@@ -7,8 +7,6 @@ if (isset($_GET['slug'])) {
     $slug = $_GET['slug'];
 
     $controllerPath = __DIR__ . "/../app/http/controllers/" . $slug . ".php";
-    echo "ROUTER OK";
-    exit;
     if (!file_exists($controllerPath)) {
         $controllerPath = __DIR__ . "/../app/http/controllers/NotFoundController.php";
     }
