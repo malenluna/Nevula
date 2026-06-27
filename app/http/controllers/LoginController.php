@@ -15,7 +15,7 @@ if ($resultado) {
     header("Location:  /public/index.php?slug=IndexController");
 
     exit;
-} else {r
+} else {
     header("Location:  /public/index.php?slug=AuthController");
     exit;
 }
