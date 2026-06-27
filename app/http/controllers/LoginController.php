@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "../app/http/models/User.php";
+require_once __DIR__ . "/../models/User.php";
 
 $usuario = trim($_POST['usuario']);
 $password = trim($_POST['password']);
