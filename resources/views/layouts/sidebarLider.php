@@ -33,7 +33,7 @@
       <div class="section-title secondary">CONFIGURACIÓN</div>
 
       <a class="nav-item" href="?slug=ConfiguracionController">CONFIGURACIÓN</a>
-      <a href="/Nevula/public/index.php?slug=LogoutController">CERRAR SESIÓN</a>
+      <a href=" /public/index.php?slug=LogOutController">CERRAR SESIÓN</a>
     </div>
 
   </div>

@@ -3,7 +3,7 @@
 session_start();
 
 if (!isset($_SESSION['usuario'])) {
-    header("Location: /public/index.php?slug=LoginController");
+    header("Location: /index.php?slug=AuthController");
     exit;
 }
 
@@ -23,6 +23,6 @@ if ($rol == "empleado") {
 
 } else {
 
-    header("Location: /public/index.php?slug=LoginController");
+    header("Location: /public/index.php?slug=AuthController");
     exit;
 }

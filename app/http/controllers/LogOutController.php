@@ -2,5 +2,5 @@
 
 session_start();
 session_destroy();
-header("Location: /Nevula/public/index.php?slug=LandingController");
+header("Location: /public/index.php?slug=LandingController");
 exit;
