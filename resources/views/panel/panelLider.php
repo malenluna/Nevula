@@ -16,7 +16,7 @@
 
         <p>Hola usuario</p>
 
-        <a href="/Nevula/public/index.php?slug=LogoutController">
+        <a href="/public/index.php?slug=LogoutController">
             Cerrar sesión
         </a>
 
