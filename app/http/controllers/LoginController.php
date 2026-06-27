@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "../app/http/models/User.php";
+require_once __DIR__ . "/../models/User.php";
 
 $usuario = trim($_POST['usuario']);
 $password = trim($_POST['password']);
@@ -12,11 +12,11 @@ if ($resultado) {
     $_SESSION['id'] = $resultado['id_usuario'];
     $_SESSION['usuario'] = $resultado['usuario'];
     $_SESSION['rol'] = $resultado['rol'];
-    header("Location:  /public/index.php?slug=IndexController");
+    header("Location: " . BASE_URL . "/index.php?slug=IndexController");
 
     exit;
-} else {r
-    header("Location:  /public/index.php?slug=AuthController");
+} else {
+    header("Location: " . BASE_URL . "/index.php?slug=AuthController");
     exit;
 }
 ?>

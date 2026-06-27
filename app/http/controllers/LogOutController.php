@@ -2,5 +2,5 @@
 
 session_start();
 session_destroy();
-header("Location: /public/index.php?slug=LandingController");
+header("Location: " . BASE_URL . "/index.php?slug=LandingController");
 exit;

@@ -29,7 +29,7 @@
       <div class="section-title secondary">EQUIPO</div>
 
       <a class="nav-item" href="?slug=ComunicacionesController">COMUNICACIONES</a>
-      <a href=" /public/index.php?slug=LogOutController">CERRAR SESIÓN</a>
+      <a href="<?= BASE_URL ?>/index.php?slug=LogOutController">CERRAR SESIÓN</a>
     </div>
 
   </div>

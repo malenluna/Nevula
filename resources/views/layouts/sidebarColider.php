@@ -30,7 +30,7 @@
       <div class="section-title secondary">ANÁLISIS</div>
 
       <a class="nav-item" href="?slug=EstadisticasController">ESTADÍSTICAS</a>
-      <a href=" /public/index.php?slug=LogOutController">CERRAR SESIÓN</a>
+      <a href="<?= BASE_URL ?>/index.php?slug=LogOutController">CERRAR SESIÓN</a>
 
     </div>
 

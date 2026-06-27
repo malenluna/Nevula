@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Panel</title>
 
-    <link rel="stylesheet" href="/public/resources/css/sidebar.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/resources/css/sidebar.css">
 </head>
 <body>
 
@@ -18,7 +18,7 @@
 
         <p>Hola usuario</p>
 
-        <a href="/public/index.php?slug=LogoutController">
+        <a href="<?= BASE_URL ?>/index.php?slug=LogOutController">
             Cerrar sesión
         </a>
 

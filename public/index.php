@@ -1,5 +1,12 @@
 <?php
 
+<?php
+if ($_SERVER['HTTP_HOST'] === 'localhost') {
+    define('BASE_URL', '/Nevula-main/public');
+} else {
+    define('BASE_URL', '/public');
+}
+
 require_once __DIR__ . "/../assets/tpl_engine/tpl_engine.php";
 
 if (isset($_GET['slug'])) {
