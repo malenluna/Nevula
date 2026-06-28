@@ -9,7 +9,7 @@
     <div class="sidebar-section">
       <div class="section-title">VISIÓN GLOBAL</div>
 
-      <a class="nav-item" href="?slug=MapaCalorController">MAPA DE CALOR</a><br>
+      <a class="nav-item" href="<?= BASE_URL ?>/index.php?slug=MapaCalorController">MAPA DE CALOR</a><br>
       <a class="nav-item" href="?slug=PeopleDatabaseController">PEOPLE DATABASE</a>
 
     </div>

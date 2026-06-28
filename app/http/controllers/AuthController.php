@@ -1,5 +1,3 @@
 <?php
 
-$tpl = LoadTPL("auth/login_nevula");
-
-printTPL($tpl);
+LoadTPL("auth/login_nevula");

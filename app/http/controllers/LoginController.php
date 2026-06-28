@@ -7,11 +7,10 @@ $password = trim($_POST['password']);
 
 $resultado = buscarUsuario($usuario, $password);
 
-
 if ($resultado) {
-    $_SESSION['id'] = $resultado['id_usuario'];
-    $_SESSION['usuario'] = $resultado['usuario'];
-    $_SESSION['rol'] = $resultado['rol'];
+    $_SESSION['id'] = $resultado['ID_USUARIO'];
+    $_SESSION['usuario'] = $resultado['Usuario'];
+    $_SESSION['rol'] = $resultado['Rol'];
     header("Location: " . BASE_URL . "/index.php?slug=IndexController");
 
     exit;

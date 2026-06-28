@@ -12,7 +12,7 @@
              <img src="nevula_logo.gif" alt="Icono" class="logo-icon">
               <h1 class="logo-text">nevula</h1>
            </div>
-       <form action="index.php?slug=LoginController" method="post">
+       <form action="<?= BASE_URL ?>/index.php?slug=LoginController" method="post">
             <label for="username">Nombre de usuario:</label>
             <input type="text" id="usuario" name="usuario" required>
             

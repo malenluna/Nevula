@@ -1,7 +1,7 @@
 <?php
 
 function LoadTPL($name){
-    return file_get_contents("../resources/views/".$name.".php");
+    include __DIR__ . "/../../resources/views/" . $name . ".php";
 }
 
 function setVarTPL($var, $value, $tpl){
@@ -9,5 +9,5 @@ function setVarTPL($var, $value, $tpl){
 }
 
 function printTPL($tpl){
-    echo $tpl;
+    //
 }
