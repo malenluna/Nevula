@@ -8,6 +8,7 @@ try {
         "u214138677_nevula",
         "YajuLuna26"
     );
+    $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $error) {
     print $error->getMessage();
 }
